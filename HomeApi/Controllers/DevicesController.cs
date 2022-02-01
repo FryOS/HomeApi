@@ -31,7 +31,7 @@ namespace HomeApi.Controllers
         /// Просмотр списка подключенных устройств
         /// </summary>
         [HttpGet] 
-        [Route("GetDevice")] 
+        [Route("GetDevices")] 
         public async Task<IActionResult> GetDevices()
         {
             var devices = await _devices.GetDevices();
